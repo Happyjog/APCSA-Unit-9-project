@@ -28,7 +28,7 @@ public class Anime{
         if(isMature == true){
             return "The anime " + name + " is a " + type + " that is mature."; 
         }else{
-            return "The anime " + name + " is a " + type + " that is family-friendly.";  
+            return "The anime " + name + " is a " + type + " that is family friendly.";  
         }
     }
 
