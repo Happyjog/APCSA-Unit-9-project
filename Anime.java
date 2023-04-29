@@ -3,24 +3,24 @@ public class Anime{
     private String name;
     private String type;
     private boolean isMature;
-    private double rating;
-    private double ratingCount;
+    private double score;
+    private double scoreCount;
     private static int animeCount = 0;
 
     public Anime(){
-        name = "Unnamed anime " + animeCount + 1;
+        name = "Unnamed anime " + (animeCount + 1);
         type = "N/A";
         isMature = false;
-        rating = 0.0;
-        ratingCount = 0;
+        score = 0.0;
+        scoreCount = 0;
         animeCount++;
     }
     public Anime(String n, String t, boolean m){
         name = n;
         type = t;
         isMature = m;
-        rating = 0.0;
-        ratingCount = 0;
+        score = 0.0;
+        scoreCount = 0;
         animeCount++;
     }
     
@@ -29,7 +29,7 @@ public class Anime{
     public boolean getRating(){return isMature;}
     public void setName(String n){name = n;}
     public void setType(String t){type = t;}
-    public void setRating(boolean m){isMature = m;}
+    public void setScore(boolean m){isMature = m;}
     public static String getAnimeCount(){return "There are currently " + animeCount + " anime in your list.";}
     public String toString(){
         if(isMature == true){
@@ -38,14 +38,18 @@ public class Anime{
             return "The anime " + name + " is a " + type + " that is family friendly.";  
         }
     }
-    
-    public void addRating(double r){
-        rating += r;
-        ratingCount += 1;
+    public boolean equals(Anime a){
+        if(this.name.equals(a.getName())&&this.type.equals(a.getType())&&this.isMature == a.getRating())
+    }
+    //adds a double (score) to the rating of the show.
+    public void addScore(double r){
+        score += r;
+        scoreCount += 1;
     }
     
-    public String calculateRating(){
-        return "The rating for " + name + " is " + rating/ratingCount +  "/10.";
+    //calculates the rating of the anime based on the inputs added on addRating mathod.
+    public String calculateScore(){
+        return "The rating score for " + name + " is " + score/scoreCount +  "/10.";
     }
     
 

@@ -2,11 +2,14 @@ public class Main{
     public static void main(String[] args){
         Anime reZero = new Anime("Re:Zero Starting Life in Another World", "TV show", false);
         
+        Anime dbz = new Anime();
+
         System.out.println(reZero);
+        System.out.println(dbz);
         
-        reZero.addRating(9);
-        reZero.addRating(10);
+        reZero.addScore(9);
+        reZero.addScore(10);
         
-        System.out.println(reZero.calculateRating());
+        System.out.println(reZero.calculateScore());
     }
 }
