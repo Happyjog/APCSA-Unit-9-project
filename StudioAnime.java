@@ -3,7 +3,6 @@ public class StudioAnime extends Anime{
 
     private String studio;
     private ArrayList<String> comments;
-    private static int madeBy;
 
     public StudioAnime(){
         super();
@@ -28,16 +27,20 @@ public class StudioAnime extends Anime{
         return super.equals(sa) && sa.getStudio().equals(studio);
     }
 
+    //adds the string inputted to an arraylist.
     public void addComment(String c){
         comments.add(c);
     }
 
+    //prints the comments added in previous method.
     public void showComments(){
+        System.out.println("Comments on animeStudio: ");
         for(String i: comments){
             System.out.println(i);
         }
     }
 
+    //overwritten method of addscore where if the studio is a certain string, it adds or subtracts to the score accordingly.
     public void addScore(int s){
         
         int n;
@@ -50,4 +53,5 @@ public class StudioAnime extends Anime{
             super.addScore(n);
         }else {super.addScore(s);}
     }
+    
 }
