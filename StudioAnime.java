@@ -34,7 +34,7 @@ public class StudioAnime extends Anime{
 
     //prints the comments added in previous method.
     public void showComments(){
-        System.out.println("Comments on animeStudio: ");
+        System.out.println("Comments on studio: ");
         for(String i: comments){
             System.out.println(i);
         }

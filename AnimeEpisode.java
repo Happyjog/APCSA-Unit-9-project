@@ -64,7 +64,7 @@ public class AnimeEpisode extends StudioAnime{
             small = i;  
               
             for (int j = i+1; j < epComments.size(); j++){  
-                if (epComments.get(i).getEpNumber() < epComments.get(small).getEpNumber()){  
+                if (epComments.get(j).getEpNumber() < epComments.get(small).getEpNumber()){  
                     small = j;
                 }
             }    

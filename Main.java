@@ -1,6 +1,7 @@
+import java.util.*;
 public class Main{
     public static void main(String[] args){
-        Anime reZero = new Anime("Re:Zero Starting Life in Another World", "TV show", false);
+        /*Anime reZero = new Anime("Re:Zero Starting Life in Another World", "TV show", false);
         
         Anime dbz = new Anime();
 
@@ -23,7 +24,7 @@ public class Main{
         
         System.out.println(reZero.calculateScore());*/
 
-        AnimeEpisode oregairu = new AnimeEpisode("My Teen Romantic Comedy SNAFU", "TV show", false, "Studio Feel", 36);
+       /* AnimeEpisode oregairu = new AnimeEpisode("My Teen Romantic Comedy SNAFU", "TV show", false, "Studio Feel", 36);
 
         oregairu.addComment("Awesome ep!", 1);
         oregairu.addComment("cool ep!", 2);
@@ -31,6 +32,10 @@ public class Main{
         oregairu.addComment("naisu", 6);
         oregairu.addComment("good stuff", 3);
 
-        oregairu.showComments();
+        oregairu.showComments();*/
+
+        ArrayList<Anime> animeList = new ArrayList<Anime>();
+
+        
     }
 }
