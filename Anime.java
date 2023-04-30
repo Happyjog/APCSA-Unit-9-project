@@ -33,13 +33,16 @@ public class Anime{
     public static String getAnimeCount(){return "There are currently " + animeCount + " anime in your list.";}
     public String toString(){
         if(isMature == true){
-            return "The anime " + name + " is a " + type + " that is mature."; 
+            return "The anime " + name + " is a " + type + " that is mature "; 
         }else{
-            return "The anime " + name + " is a " + type + " that is family friendly.";  
+            return "The anime " + name + " is a " + type + " that is family friendly ";  
         }
     }
-    public boolean equals(Anime a){
-        if(this.name.equals(a.getName())&&this.type.equals(a.getType())&&this.isMature == a.getRating())
+    public boolean equals(Object other){
+        Anime a = (Anime)other;
+        if(this.name.equals(a.getName())&&this.type.equals(a.getType())&&this.isMature == a.getRating()){
+            return true;
+        }else{return false;}
     }
     //adds a double (score) to the rating of the show.
     public void addScore(double r){

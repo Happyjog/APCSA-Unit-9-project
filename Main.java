@@ -4,11 +4,14 @@ public class Main{
         
         Anime dbz = new Anime();
 
+
         System.out.println(reZero);
         System.out.println(dbz);
         
         reZero.addScore(9);
         reZero.addScore(10);
+        System.out.println(dbz.equals(reZero));
+        System.out.println(reZero.equals(reZero));
         
         System.out.println(reZero.calculateScore());
     }
