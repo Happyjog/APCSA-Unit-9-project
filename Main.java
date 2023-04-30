@@ -4,6 +4,14 @@ public class Main{
         
         Anime dbz = new Anime();
 
+        StudioAnime Jojo = new StudioAnime("Jojo's Bizzare Adventure", "TV show", false, "David Productions");
+
+        Jojo.addComment("Awesome!");
+        Jojo.addComment("Cool!");
+        Jojo.addComment("Nice!");
+
+        //Jojo.showComments();
+
 
         System.out.println(reZero);
         System.out.println(dbz);
