@@ -43,20 +43,24 @@ public class AnimeEpisode extends StudioAnime{
         return super.equals(ae) && epCount == ae.getEpCount();
     }
 
+    //adds the argument value to the epWatched variable
     public void watched(int w){
         epWatched += w;
     }
+    //adds more episodes to the epCount value based on the argument inputted
     public void addNewEps(int ne){
         epCount += ne;
     }
 
+    //overrides addComment method from StudioAnime, this time allowing you to comment on episodes.
     public void addComment(String c, int ep){
         epComments.add(new CommentedEpisode(ep, c));
     }
 
+    //overrides showComments method from StudioAnime, this time calling the super method and displaying comments for each episode in order.
     public void showComments(){
         super.showComments();
-        System.out.println("Comments for episodes: ");
+        System.out.println("Comments for episodes of " + super.getName() + ": ");
 
         int small;
 

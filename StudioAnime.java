@@ -41,11 +41,11 @@ public class StudioAnime extends Anime{
     }
 
     //overwritten method of addscore where if the studio is a certain string, it adds or subtracts to the score accordingly.
-    public void addScore(int s){
+    public void addScore(double s){
         
-        int n;
+        double n;
 
-        if (studio.equals("ufotable")||studio.equals("WhiteFox")){
+        if (studio.equals("ufotable")||studio.equals("White Fox")){
             n = s+1;
             super.addScore(n);
         }else if (studio.equals("MAPPA")){
