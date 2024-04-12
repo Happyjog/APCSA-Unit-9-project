@@ -35,7 +35,7 @@ public class AnimeEpisode extends StudioAnime{
     public int getEpWatched(){return epWatched;}
 
     public String toString(){
-        return super.toString() + "in which you have watched " + epWatched + "/" + epCount;
+        return super.toString() + " in which you have watched " + epWatched + "/" + epCount;
     }
 
     public boolean equals(Object other){
